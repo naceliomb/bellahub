@@ -3,38 +3,32 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
     </head>
     <body>
         <section id="gallery-modal">
-            <div class="container slide-container">
-                <div class="mySlides myImgModal">
-                    <img src="https://bellahub.com.br/wp-content/uploads/2022/02/testeA4-scaled.jpg"/>
+            
+            <!-- Flickity HTML init -->
+            <div class="carousel js-flickity" 
+                data-flickity='{ "wrapAround": true, "draggable": false }'
+            >
+                <!-- images from unsplash.com -->
+                <div class="carousel-cell">
+                    <img src="https://bellahub.com.br/wp-content/uploads/2022/02/testeA4-scaled.jpg" alt="orange tree" />
                 </div>
-                <div class="mySlides myImgModal">
-                    <img src="https://www.w3schools.com/howto/img_woods_wide.jpg"/>
+                <div class="carousel-cell">
+                    <img src="https://bellahub.com.br/wp-content/uploads/2022/02/testeA4-scaled.jpg" alt="submerged" />
                 </div>
-
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-                <!-- <div class="row">
-                    <div class="column">
-                        <img class="demo cursor" src="https://bellahub.com.br/wp-content/uploads/2022/02/testeA4-scaled.jpg" onclick="currentSlide(1)" alt="The Woods" />
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="https://www.w3schools.com/howto/img_woods_wide.jpg" onclick="currentSlide(2)" alt="Cinque Terre" />
-                    </div>
-                </div> -->
-            </div>
-            <!-- <img class="myImgModal" src="https://bellahub.com.br/wp-content/uploads/2022/02/testeA4-scaled.jpg" alt="Frente" style="width: 100%; max-width: 300px; border: 2px solid black" />
-            <img class="myImgModal" src="https://www.w3schools.com/howto/img_woods_wide.jpg" alt="Verso" style="width: 100%; max-width: 300px; border: 2px solid black" /> -->
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="img01" />
-                <div id="caption"></div>
             </div>
         </section>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" />
+            <div id="caption"></div>
+        </div>
+
+        </section> -->
         <script src="index.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
 </html>
